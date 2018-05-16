@@ -1,0 +1,61 @@
+	function show(name)
+	{
+		o = document.all?document.all[name]:document.getElementById(name);
+		$("#"+name).show(0);
+		o.style.display="block";
+		return;
+	}
+
+	function hide(name)
+	{
+		o = document.all?document.all[name]:document.getElementById(name);
+
+		$("#"+name).hide(0);  o.style.display="none";
+	};
+
+	function showhide(name)
+	{
+		o = document.all?document.all[name]:document.getElementById(name);
+		
+		if (o.style.display=="block")
+		{
+			$("#"+name).hide(100);  o.style.display="none";
+		}
+		else
+		{
+			$("#"+name).show(100);
+			o.style.display="block";
+		};
+
+		return;
+	}
+	
+	function cshowhide(name)
+	{
+		if ($("."+name).css('display') == "table-row")
+			$("."+name).hide(100);
+		else
+			$("."+name).show(100);
+		return;
+	}
+	
+	function showhide2(n1,n2)
+	{
+		hide(n1);
+		show(n2);
+	}
+
+	function showblock(n1)
+	{
+		show(n1);
+	}
+
+	function hideblock(n1)
+	{
+		hide(n1);
+	}
+
+	function showpicture(descript) {
+	  fotowin=window.open(descript, 'hint', 'width=1240,height=800,dependent,scrollbars,resizable,menubar,top=10,left=30');
+	  fotowin.focus();
+	}

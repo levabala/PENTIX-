@@ -1,0 +1,384 @@
+.container {width:1170px !important;}
+body {  color: #333333 ;font-family: "Ubuntu Mono";
+line-height: 1;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: "Ubuntu Mono";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 30px
+}
+
+h2 {
+	font-size: 24px;
+	font-family: "Ubuntu Mono";
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 10px
+
+}
+
+.breadcrumb2 {
+  font-size: 14px;
+  font-family: "Ubuntu Mono";
+  color: rgb(27, 117, 188);
+}
+
+a.breadcrumb2 {
+  font-size: 14px;
+  font-family: "Ubuntu Mono";
+  color: rgb(27, 117, 188);
+}
+
+.smenu {
+  font-size: 20px;
+  font-family: "Ubuntu Mono";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+}
+a.smenu {
+  font-size: 20px;
+  font-family: "Ubuntu Mono";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+}
+
+.smenub {
+  font-size: 14px;
+  font-family: "Ubuntu Mono";
+  color: #aaaaaa;
+  line-height: 1;
+  text-align: center;
+}
+a.smenub {
+  font-size: 14px;
+  font-family: "Ubuntu Mono";
+  color: #aaaaaa;
+  line-height: 1;
+  text-align: center;
+}
+
+
+.service_title {
+  font-size: 17.852px;
+  font-family: "Ubuntu Mono";
+  color: rgb(27, 117, 188);
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.service_text {
+  font-size: 17.852px;
+  font-family: "Ubuntu Mono";
+  color: rgb(102, 102, 102);
+  line-height: 1.111;
+  text-align: left;
+  font-weight: normal;
+}
+
+
+.bg {
+  background-color: rgb(251, 247, 247);
+  position: absolute;
+  left: 0px;
+}
+
+[data-href]{cursor:pointer;}
+
+.sblockbig {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(229, 228, 228);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 7px 0px rgba(21, 25, 27, 0.08);
+  width: 558px;
+  height: 208px;
+  z-index: 147;
+  line-height: 1.1;
+  padding: 19px;
+  margin-bottom: 20px;
+}
+
+.sblockbig2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(229, 228, 228);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 7px 0px rgba(21, 25, 27, 0.08);
+  width: 358px;
+  height: 308px;
+  z-index: 147;
+  line-height: 1.1;
+  padding: 19px;
+  margin-bottom: 20px;
+}
+
+.sblock {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(229, 228, 228);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 7px 0px rgba(21, 25, 27, 0.08);
+  width: 358px;
+  height: 178px;
+  z-index: 147;
+  line-height: 1.1;
+  padding-top: 19px;
+}
+
+.t1 {
+  font-size: 19.836px;
+  font-family: "Ubuntu Mono";
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.t2 {
+  font-size: 23.803px;
+  font-family: "Ubuntu Mono";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.t3 {
+  font-size: 15.869px;
+  font-family: "Ubuntu Mono";
+  color: rgb(102, 102, 102);
+  line-height: 1.25;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.text {
+  font-size: 15.869px;
+  font-family: "Ubuntu Mono";
+  color: rgb(51, 51, 51);
+  line-height: 1.875;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.date {
+  font-size: 16px;
+  font-family: "Ubuntu Mono";
+  color: rgb(102, 102, 102);
+  line-height: 1.25;
+  text-align: left;
+  padding-left: 12px; 
+  padding-top: 3px;
+  float: left;
+}
+
+.news {
+  font-size: 17.852px;
+  font-family: "Ubuntu Mono";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.team1 {
+  font-size: 17.852px;
+  font-family: "Ubuntu Mono";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.team11 {
+  font-size: 17.852px;
+  font-family: "Ubuntu Mono";
+  color: #1b75bc;
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.team2 {
+  font-size: 15.869px;
+  font-family: "Ubuntu Mono";
+  color: rgb(102, 102, 102);
+  line-height: 1.25;
+  text-align: center;
+	padding-top: 20px;
+}
+
+.thide {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 7px 0px rgba(21, 25, 27, 0.08);
+}
+
+base ul{
+line-height: 1.5;
+	margin-left:20px;
+}
+
+ul.base {
+line-height: 1.5;
+margin-left:20px;
+list-style-type: disc;
+}
+
+ul.base_1 {
+line-height: 1.5;
+margin-left:20px;
+list-style-type: disc;
+}
+
+ul.base_2 {
+line-height: 1.5;
+margin-left:20px;
+list-style-type: circle;
+}
+
+ul.base_3 {
+line-height: 1.5;
+margin-left:20px;
+list-style-type: square;
+}
+
+ol.base{
+line-height: 2;
+margin-left:20px;
+list-style-type: disc;
+}
+
+ul.instagram {
+	font-size: 12px;
+	float:right;
+	text-transform:uppercase;
+	color:#fff;
+	font-family:'Trebuchet MS';
+	}
+ul.instagram a:hover, ul.instagram a.active {
+	color:#972351
+}
+ul.instagram li {
+	float:left;
+	line-height:20px;
+	margin:5px;
+	padding-left:15px;
+}
+ul.instagram a {
+	color:#fff;
+	font-weight:bold;
+	display:block;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:12px;
+	line-height:28px
+}
+
+.project_t1 {
+  font-size: 16px;
+  font-family: "Ubuntu Mono";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  line-height: 1.125;
+  padding-bottom: 45px;
+}
+.project_t2 {
+  font-size: 14px;
+  font-family: "Ubuntu Mono";
+  color: rgb(255, 255, 255);
+  line-height: 1.125;
+  text-align: center;
+}
+.project_t3 {
+  font-size: 16px;
+  font-family: "Ubuntu Mono";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.team_title {
+  font-size: 24px;
+  font-family: "Ubuntu Mono";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.25;
+  padding-bottom: 40px;
+}
+
+.content ul {list-style-image:url("/imgs/design/li.png") }
+.content {  
+font-size: 16px; font-family: "Ubuntu Mono";
+color: rgb(51, 51, 51);
+line-height: 1.875;
+text-align: justify;
+
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
+
+/** modal window styles **/
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 10px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+
+#loginmodal {
+  width: 640px;
+  padding: 15px 20px;
+  background: #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+table.base_table, table.base_table td { 
+	border-collapse: collapse;
+	border: 1px solid #dedede; /* Параметры рамки */
+	padding: 4px; /* Поля вокруг текста */
+}
+
+table.clear_table, table.clear_table td { 
+	border-collapse: collapse;
+	border: 0px solid #dedede; /* Параметры рамки */
+	padding: 0px; /* Поля вокруг текста */
+}
+
+table.short_table { 
+	border-collapse: collapse;
+	border: 0px dashed #dedede; /* Параметры рамки */
+	padding: 4px; /* Поля вокруг текста */
+	
+}
+
+table.short_table td { 
+	border-collapse: collapse;
+	border: 1px dashed #aaaaaa; /* Параметры рамки */
+	padding: 1px; /* Поля вокруг текста */
+	padding-top: 2px;
+}
