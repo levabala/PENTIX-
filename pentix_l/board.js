@@ -13,8 +13,20 @@ function Board(width = 14, height = 25){
         }
     }    
 
-    this.placeFigure = function(center, figure, value){
+    this.canPlaceFigure = function(figure){
+        var clear = true;
+        figureCellsIteration(figure, (cell) => {
+            var res = board.cells[cell.x][cell.y] == 0;
+            clear = res;
+            return res;
+        });
+    }    
 
+    this.placeFigure = function(figure, value){
+        figureCellsIteration(figure, (cell) => {
+            board.cells[cell.x][cell.y] = value;
+            return true;
+        });
     }
 
     var vectorsMap = {
@@ -23,36 +35,71 @@ function Board(width = 14, height = 25){
         2: new P(-1, 0),
         3: new P(0, -1)
     }
-    function figureCellsIteration(center, figure, action){
-        var maxTranspose = 1 + figure.layer * 2;
-        var cell = center.clone();
-        var i = 0;
+    function figureCellsIteration(figure, action){
+        var maxTranspose = 1 + figure.layers * 2;
+        var cell = figure.center.clone();
+        var i = 0;        
         var rotation = figure.rotation;
-        for (var t = 0; t <= maxTranspose; t++){
-            //by first axis            
-            cell.add(vectorsMap[rotation] * t)
-            if (figure.code <= i);
-                break;
-            if (figure.code[i])
-                if (!action(cell))
-                    break;            
-            i++;
-            if (figure.code <= i)
-                break;
+
+        if (figure.code.length <= i)
+        return;
+        
+        //check center
+        console.log(cell);
+        if (figure.code[i])
+            if (!action(cell))
+                return;
+        i++;
+
+        for (var t = 1; t <= maxTranspose; t++){
+            function processAxis(){                
+                var step = vectorsMap[rotation].multiply(t);
+                console.log("step:",step)
+                while (step.x != 0 && figure.code.length > i){            
+                    var delta = Math.sign(step.x);
+                    cell.add(new P(delta, 0))
+                    console.log(cell);           
+                    if (figure.code[i])
+                        if (!action(cell))
+                            break;            
+                    i++;     
+                    step.x -= delta;           
+                }
+                while (step.y != 0 && figure.code.length > i){            
+                    var delta = Math.sign(step.y);
+                    cell.add(new P(0, delta))
+                    console.log(cell);           
+                    if (figure.code[i])
+                        if (!action(cell))
+                            break;            
+                    i++;                
+                    step.y -= delta;           
+                }
+            }
+
+            //by first axis    
+            processAxis();
+            if (figure.code.length <= i)
+                    break;
 
             //now rotate
-            rotation++;
+            rotation += figure.mirrorState * 2 - 1; //0 -> -1 && 1 -> 1
             if (rotation > 3)
                 rotation = 0;
+            else if (rotation < 0)
+                rotation = 3;
 
             //by second axis
-            cell.add(vectorsMap[rotation] * t)            
-            if (figure.code[i])
-                if (!action(cell))
+            processAxis();
+            if (figure.code.length <= i)
                     break;
-            i++;
-            if (figure.code <= i)
-                break;
+
+            //now rotate
+            rotation += figure.mirrorState * 2 - 1; 
+            if (rotation > 3)
+                rotation = 0;
+            else if (rotation < 0)
+                rotation = 3;
         }
     }
 }

@@ -1,5 +1,6 @@
-function Figure(code, rotation = 0, mirrorState = 0){
+function Figure(center, code, rotation = 0, mirrorState = 0){
     var figure = this;
+    this.center = center; 
     this.code = code;
     this.rotation = rotation;
     this.mirrorState = mirrorState;

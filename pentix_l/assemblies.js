@@ -7,16 +7,22 @@ function inRange(num, from, to){
 }
 
 function P(x, y){
-    var P = this;
+    var p = this;
     this.x = x;
     this.y = y;    
 
     this.add = function(p2){
-        P.x += p2.x;
-        P.y += p2.y;
+        p.x += p2.x;
+        p.y += p2.y;
     }
 
     this.clone = function(){
         return new P(p.x, p.y);
+    }
+
+    this.multiply = function(value){
+        p.x *= value;
+        p.y *= value;
+        return p;
     }
 }
