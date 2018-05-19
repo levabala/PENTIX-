@@ -14,6 +14,7 @@ function P(x, y){
     this.add = function(p2){
         p.x += p2.x;
         p.y += p2.y;
+        return p;
     }
 
     this.clone = function(){
